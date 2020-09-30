@@ -15,7 +15,7 @@ else
   codingUrl=https://ZYzEthRPkx:${CODING_TOKEN}@e.coding.net/itzhangbao/website/official.git
 fi
 
-git clone codingUrl official
+git clone $codingUrl official
 
 mv -f docs/.vuepress/dist official/blog
 
