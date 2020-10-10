@@ -15,7 +15,7 @@ else
   codingUrl=https://ZYzEthRPkx:${CODING_TOKEN}@e.coding.net/itzhangbao/website/official.git
 fi
 git clone $codingUrl official
-mv -f docs/.vuepress/dist official
+mv -rf docs/.vuepress/dist/* official
 
 #三、部署到coding
 cd official
