@@ -15,8 +15,7 @@ else
   codingUrl=https://ZYzEthRPkx:${CODING_TOKEN}@e.coding.net/itzhangbao/website/official.git
 fi
 git clone $codingUrl official
-rm -rf official/blog
-mv -f docs/.vuepress/dist official/blog
+mv -f docs/.vuepress/dist official
 
 #三、部署到coding
 cd official
@@ -33,15 +32,7 @@ git init
 git add -A
 git commit -m "${msg}"
 git push -f $codingUrl master # 推送到coding
-cd - # 退回开始所在目录
 
-#四、备份blog网站，official网站更新时clone此分支
-cd official/blog
-git init
-git add -A
-git commit -m"${msg}"
-git push -f ${codingUrl} master:site-blog
-
-#五、删除生成文件
+#四、删除生成文件
 cd - # 退回开始所在目录
 rm -rf official
