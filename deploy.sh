@@ -32,7 +32,7 @@ find . -name ".git" | xargs rm -Rf
 echo "四、克隆【site-official】"
 cd -
 git clone -b site-official $codingUrl official
-find . -name ".git" | xargs rm -Rf
+find official -name ".git" | xargs rm -Rf
 mv -f official/* dist
 
 #五、部署到【master】
