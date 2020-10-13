@@ -23,6 +23,9 @@ module.exports = {
     ["meta", {name: "baidu-site-verification", content: "7F55weZDDc"}], // 百度统计的站点拥有者验证
     ["meta", {name: "theme-color", content: "#11a8cd"}], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
+    ["link", {rel: "stylesheet", href: "/includes/stylesheets/jumbo.lite.css"}],
+    ["script", {language: "javascript", type: "text/javascript", src: "/includes/javascripts/jumbo.lite.js"}],
+    ["link", {rel: "html", href: "/index.html"}],
   ],
 
   // 代码行号
