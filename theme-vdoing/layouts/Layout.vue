@@ -97,17 +97,6 @@ export default {
       themeMode: 'light'
     }
   },
-  beforeMount () {
-    // 引入图标库
-    const social = this.$themeConfig.social
-    if (social && social.iconfontCssFile) {
-      let linkElm = document.createElement("link")
-      linkElm.setAttribute('rel', 'stylesheet');
-      linkElm.setAttribute("type", "text/css")
-      linkElm.setAttribute("href", social.iconfontCssFile)
-      document.head.appendChild(linkElm)
-    }
-  },
   computed: {
     showRightMenu () {
       const { headers } = this.$page
@@ -176,6 +165,7 @@ export default {
     }
   },
   beforeMount () {
+    this.iconfontCssFile()
     this.isSidebarOpenOfclientWidth()
     const mode = storage.get('mode') // 不放在created是因为vuepress不能在created访问浏览器api，如window
     if (!mode || mode === 'auto') { // 当未切换过模式，或模式处于'跟随系统'时
@@ -278,7 +268,19 @@ export default {
           this.toggleSidebar(false)
         }
       }
-    }
+    },
+
+    iconfontCssFile () {
+      // 引入图标库
+      const social = this.$themeConfig.social
+      if (social && social.iconfontCssFile) {
+        let linkElm = document.createElement("link")
+        linkElm.setAttribute('rel', 'stylesheet');
+        linkElm.setAttribute("type", "text/css")
+        linkElm.setAttribute("href", social.iconfontCssFile)
+        document.head.appendChild(linkElm)
+      }
+    },
   }
 }
 </script>

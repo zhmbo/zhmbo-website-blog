@@ -53,28 +53,28 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     blogger: {
       avatar: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20200919111632.png",
-      name: "Jumbo",
-      slogan: "a ios developer",
+      name: "jumbo",
+      slogan: "an ios developer",
     },
 
     // 社交图标，显示于博主信息栏和页脚栏
     social: {
-      // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+      iconfontCssFile: '//at.alicdn.com/t/font_2127355_mwd3npp5bqj.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
-          iconClass: "icon-youjian",
-          title: "发邮件",
-          link: "mailto:itzhangbao@163.com",
+            iconClass: "icon-youjian",
+            title: "发邮件",
+            link: "mailto:itzhangbao@163.com",
         },
         {
-          iconClass: "icon-github",
-          title: "GitHub",
-          link: "https://github.com/itzhangbao",
+            iconClass: "icon-github",
+            title: "GitHub",
+            link: "https://github.com/itzhangbao",
         },
         {
-          iconClass: "icon-erji",
-          title: "听音乐",
-          link: "https://music.163.com/#/playlist?id=755597173",
+            iconClass: "icon-home",
+            title: "官网",
+            link: "https://itzhangbao.com",
         },
       ]
     },
