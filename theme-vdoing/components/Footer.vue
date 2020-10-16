@@ -11,18 +11,18 @@
       ></a>
     </div>
 
+    <template v-if="footer">
+      Copyright © {{ footer.createYear }}<span v-if="footer.createYear != new Date().getFullYear()">-{{ new Date().getFullYear()}}</span>
+      <span v-html="footer.copyrightInfo"></span>
+    </template>
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    <!-- Theme by
+    · Powered by the 
     <a
       href="https://github.com/xugaoyi/vuepress-theme-vdoing"
       target="_blank"
       title="本站主题"
-      >Vdoing</a
-    > -->
-    <template v-if="footer">
-      Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
-      <span v-html="footer.copyrightInfo"></span>
-    </template>
+      >Vdoing theme</a
+    > for Vuepress.
   </div>
 </template>
 

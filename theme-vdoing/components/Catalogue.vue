@@ -82,8 +82,17 @@ export default {
     },
     getCatalogueList () {
       const { sidebar } = this.$site.themeConfig
-      const key = this.$frontmatter.pageComponent.data.key
-      const catalogueList = sidebar[`/${key}/`]
+      var keys = this.$frontmatter.pageComponent.data.keys
+      var catalogueList
+
+      if (typeof keys === 'string') {
+        catalogueList = sidebar[`/${keys}/`]
+      }else {
+        catalogueList = []
+        keys.forEach((item,index,array)=>{
+          catalogueList = catalogueList.concat(sidebar[`/${item}/`])
+        })
+      }
 
       if (!catalogueList) {
         console.error('未获取到目录数据，请查看front matter中设置的key是否正确。')
