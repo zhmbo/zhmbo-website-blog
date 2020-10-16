@@ -23,7 +23,7 @@
           <Content class="theme-vdoing-content" />
         </div>
 
-        <PageEdit />
+        <PageEdit v-if="isShowEdit"/>
         <PageNav v-bind="{ sidebarItems }" />
       </div>
 
@@ -67,6 +67,9 @@ export default {
     },
     isShowUpdateBar () {
       return this.updateBarConfig && this.updateBarConfig.showToArticle === false ? false : true
+    },
+    isShowEdit () {
+      return (this.$frontmatter.showEdit === false) ? false : true
     },
     showTitle () {
       return !this.$frontmatter.pageComponent

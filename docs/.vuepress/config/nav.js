@@ -41,7 +41,7 @@ module.exports = [
     ]
   },
   {
-    text: '关于', link: '/about/'
+    text: '留言', link: '/leaveword/'
   },
   {
     text: '收藏', link: '/pages/beb6c0bd8a66cea6/',

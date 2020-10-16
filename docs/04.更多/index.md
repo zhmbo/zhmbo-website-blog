@@ -1,8 +1,8 @@
 ---
-pageComponent: 
+pageComponent:
   name: Catalogue
-  data: 
-    key: 04.更多
+  data:
+    keys: 04.更多
     imgUrl: /img/more.png
     description: 学习、面试、在线工具等更多文章和页面
 title: 更多
