@@ -59,7 +59,7 @@ module.exports = {
 
     // 社交图标，显示于博主信息栏和页脚栏
     social: {
-      iconfontCssFile: '//at.alicdn.com/t/font_2127355_mwd3npp5bqj.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+      // iconfontCssFile: '//at.alicdn.com/t/font_2127355_mwd3npp5bqj.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
             iconClass: "icon-youjian",
@@ -72,7 +72,7 @@ module.exports = {
             link: "https://github.com/itzhangbao",
         },
         {
-            iconClass: "icon-home",
+            iconClass: "jumbo-home",
             title: "官网",
             link: "https://itzhangbao.com",
         },

@@ -3,7 +3,7 @@
     <div class="theme-vdoing-content">
       <span>404</span>
       <blockquote>{{ getMsg() }}</blockquote>
-      <router-link to="/blog">返回首页</router-link>
+      <router-link to="/blog/">返回首页</router-link>
     </div>
   </div>
 </template>

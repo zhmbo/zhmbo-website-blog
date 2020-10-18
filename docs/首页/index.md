@@ -1,6 +1,6 @@
 ---
 home: true
-permalink: /blog
+permalink: /blog/
 heroText: Jumbo's blog
 tagline: iOS技术博客，积跬步以至千里，致敬每个爱学习的你。
 features:
@@ -22,6 +22,7 @@ categories:
   - home
 tags:
   -
+# comment: false
 ---
 
 <!-- 小熊猫 -->

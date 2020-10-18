@@ -22,12 +22,27 @@
       target="_blank"
       title="本站主题"
       >Vdoing theme</a
-    > for Vuepress.
+    > for Vuepress· 
+    <span>
+      <i class="iconfont jumbo-eye"></i>
+      <!-- <AccessNumber idVal="/blog/" /> -->
+    </span>
   </div>
 </template>
 
 <script>
+import AccessNumber from './AccessNumber.vue'
 export default {
+  components: {AccessNumber},
+   data () {
+    return {
+      numStyle: {
+        fontSize: '.9rem',
+        fontWeight: 'normal',
+        color: '#999'
+      },
+    }
+  },
   computed: {
     social() {
       return this.$themeConfig.social;
@@ -36,6 +51,11 @@ export default {
       return this.$themeConfig.footer;
     },
   },
+  methods: {
+    windowPath() {
+      return window.location.pathname;
+    }
+  }
 };
 </script>
 
@@ -57,6 +77,12 @@ export default {
     color inherit
     &:hover
       color $accentColor
+  > span {
+    // margin-left .4rem
+    > i {
+      margin-right .5rem
+    }
+  }
 @media (min-width ($MQMobile + 1px))
   .sidebar-open .footer
     width auto
@@ -67,4 +93,15 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
+
+@media (max-width: $MQMobile) {
+  .footer {
+    text-align: left!important;
+    > span {
+      display block
+      margin-left 0
+      line-height 2rem
+    }
+  }
+}
 </style>

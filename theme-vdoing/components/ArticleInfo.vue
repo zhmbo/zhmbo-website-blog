@@ -65,6 +65,16 @@
           <a href="javascript:;">{{articleInfo.date}}</a>
         </div>
         <div
+          class="date iconfont jumbo-eye"
+          title="统计"
+          v-if="articleInfo.date"
+        >
+          <AccessNumber
+            :idVal="windowPath()"
+            :numStyle="numStyle" 
+            :flagTitle="this.$page.title"/>
+        </div>
+        <div
           class="date iconfont icon-wenjian"
           title="分类"
           v-if="$themeConfig.category !== false && !(articleInfo.classify1 && articleInfo.classify1 !== '_posts') && articleInfo.categories"
@@ -81,10 +91,18 @@
 </template>
 
 <script>
+import AccessNumber from './AccessNumber.vue'
 export default {
+  components: {AccessNumber},
   data () {
     return {
-      articleInfo: {}
+      articleInfo: {},
+
+      numStyle: {
+        fontSize: '.9rem',
+        fontWeight: 'normal',
+        color: '#999'
+      },
     }
   },
   created () {
@@ -93,10 +111,22 @@ export default {
   watch: {
     '$route.path' () {
       this.articleInfo = this.getPageInfo()
+    },
+    '$route' (to, from) {
+      // console.log('windowpath:',window.location.pathname)
+        // console.log(to.path,from.path)
+      if (to.path !== from.path) {
+        // 切换页面时刷新评论
+        this.$router.go(0)
+        setTimeout(() => {
+          // this.initValine()
+        }, 300)
+      }
     }
   },
   methods: {
     getPageInfo () {
+      console.log(this.$page)
       const pageInfo = this.$page
       const { relativePath } = pageInfo
       const { sidebar } = this.$themeConfig
@@ -123,7 +153,11 @@ export default {
         author,
         categories
       }
-    }
+    },
+
+      windowPath() {
+        return window.location.pathname;
+      }
   }
 }
 </script>
