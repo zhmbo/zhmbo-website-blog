@@ -126,7 +126,6 @@ export default {
   },
   methods: {
     getPageInfo () {
-      console.log(this.$page)
       const pageInfo = this.$page
       const { relativePath } = pageInfo
       const { sidebar } = this.$themeConfig
@@ -155,9 +154,9 @@ export default {
       }
     },
 
-      windowPath() {
-        return window.location.pathname;
-      }
+    windowPath() {
+      return window.location.pathname;
+    }
   }
 }
 </script>

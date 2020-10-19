@@ -17,7 +17,8 @@ export default {
   methods: {
     getIdVal (path) {
       const base = this.$site.base
-      return base.slice(0, base.length - 1) + path
+      // return base.slice(0, base.length - 1) + path
+      return base.slice(0, base.length - 1) + window.location.pathname
     }
   }
 }
