@@ -50,11 +50,6 @@ export default {
     footer() {
       return this.$themeConfig.footer;
     },
-  },
-  methods: {
-    windowPath() {
-      return window.location.pathname;
-    }
   }
 };
 </script>

@@ -70,7 +70,6 @@
           v-if="articleInfo.date"
         >
           <AccessNumber
-            :idVal="windowPath()"
             :numStyle="numStyle" 
             :flagTitle="this.$page.title"/>
         </div>
@@ -152,10 +151,6 @@ export default {
         author,
         categories
       }
-    },
-
-    windowPath() {
-      return window.location.pathname;
     }
   }
 }
