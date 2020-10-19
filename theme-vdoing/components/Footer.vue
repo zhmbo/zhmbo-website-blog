@@ -22,10 +22,11 @@
       target="_blank"
       title="本站主题"
       >Vdoing theme</a
-    > for Vuepress· 
+    > for Vuepress ·
     <span>
       <i class="iconfont jumbo-eye"></i>
-      <AccessNumber idVal="/blog/" />
+      <!-- see: -->
+      <AccessNumber idVal="/blog/" :numStyle="numStyle"/>
     </span>
     <Comments :isShowComments="false"/>
   </div>
@@ -36,9 +37,9 @@ export default {
    data () {
     return {
       numStyle: {
-        fontSize: '.9rem',
+        fontSize: '.4rem',
         fontWeight: 'normal',
-        color: '#999'
+        color: '#777777'
       },
     }
   },
@@ -74,7 +75,8 @@ export default {
   > span {
     // margin-left .4rem
     > i {
-      margin-right .5rem
+      padding 0 02px
+      font-size .5rem
     }
   }
 @media (min-width ($MQMobile + 1px))

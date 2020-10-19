@@ -41,7 +41,7 @@
       </ul>
       <div class="info">
         <div
-          class="author iconfont icon-touxiang"
+          class="author iconfont jumbo-author"
           title="作者"
           v-if="articleInfo.author"
         >
@@ -58,7 +58,7 @@
           >{{articleInfo.author.name || articleInfo.author}}</a>
         </div>
         <div
-          class="date iconfont icon-riqi"
+          class="date iconfont jumbo-time"
           title="创建时间"
           v-if="articleInfo.date"
         >
@@ -87,7 +87,6 @@
         </div>
       </div>
     </div>
-    <Comments :isShowComments="false"/>
   </div>
 </template>
 
@@ -98,7 +97,7 @@ export default {
       articleInfo: {},
 
       numStyle: {
-        fontSize: '.9rem',
+        fontSize: '.7rem',
         fontWeight: 'normal',
         color: '#999'
       },
@@ -111,17 +110,6 @@ export default {
     '$route.path' () {
       this.articleInfo = this.getPageInfo()
     },
-    // '$route' (to, from) {
-    //   // console.log('windowpath:',window.location.pathname)
-    //     // console.log(to.path,from.path)
-    //   if (to.path !== from.path) {
-    //     // 切换页面时刷新评论
-    //     this.$router.go(0)
-    //     setTimeout(() => {
-    //       // this.initValine()
-    //     }, 300)
-    //   }
-    // }
   },
   methods: {
     getPageInfo () {
