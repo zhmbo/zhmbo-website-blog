@@ -14,13 +14,8 @@ export default {
       default: 'Your Article Title'
     }
   },
-  mounted() {
-    console.log(1111111,this.$page)
-    this.window = window;
-  },
   methods: {
     getIdVal (path) {
-    console.log(22222)
       const base = this.$site.base
       // return base.slice(0, base.length - 1) + path
       return base.slice(0, base.length - 1) + this.$page.path
