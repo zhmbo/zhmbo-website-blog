@@ -33,6 +33,8 @@
         v-if="isShowUpdateBar"
       />
 
+      <Comments v-if="true" :isShowComments="shouldShowComments"/>
+
       <slot name="bottom" />
     </main>
   </div>
@@ -61,6 +63,13 @@ export default {
     this.updateBarConfig = this.$themeConfig.updateBar
   },
   computed: {
+    // 是否显示评论
+    shouldShowComments () {
+      const { comment } = this.$frontmatter
+      const { showComment } = this.$themeConfig.valineConfig || { showComment: true }
+      console.log("是否显示评论：",(showComment !== false && comment !== false) || (showComment === false && comment === true));
+      return (showComment !== false && comment !== false) || (showComment === false && comment === true)
+    },
     bgStyle () {
       const { contentBgStyle } = this.$themeConfig
       return contentBgStyle ? 'bg-style-' + contentBgStyle : ''
@@ -91,6 +100,7 @@ export default {
 
 <style lang="stylus">
 @require '../styles/wrapper.styl'
+@require '../styles/valine.styl'
 
 .page
   padding-bottom 2rem
@@ -101,6 +111,8 @@ export default {
     padding-top ($navbarHeight + 1.5rem)
   >*
     @extend $vdoing-wrapper
+  .comments-wrapper
+    @extend $wrapper
 .theme-vdoing-wrapper
   .content-wrapper
     position relative

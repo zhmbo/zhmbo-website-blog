@@ -70,6 +70,7 @@
           v-if="articleInfo.date"
         >
           <AccessNumber
+            :idVal="this.$page.path"
             :numStyle="numStyle" 
             :flagTitle="this.$page.title"/>
         </div>
@@ -86,13 +87,12 @@
         </div>
       </div>
     </div>
+    <Comments :isShowComments="false"/>
   </div>
 </template>
 
 <script>
-import AccessNumber from './AccessNumber.vue'
 export default {
-  components: {AccessNumber},
   data () {
     return {
       articleInfo: {},
@@ -111,17 +111,17 @@ export default {
     '$route.path' () {
       this.articleInfo = this.getPageInfo()
     },
-    '$route' (to, from) {
-      // console.log('windowpath:',window.location.pathname)
-        // console.log(to.path,from.path)
-      if (to.path !== from.path) {
-        // 切换页面时刷新评论
-        this.$router.go(0)
-        setTimeout(() => {
-          // this.initValine()
-        }, 300)
-      }
-    }
+    // '$route' (to, from) {
+    //   // console.log('windowpath:',window.location.pathname)
+    //     // console.log(to.path,from.path)
+    //   if (to.path !== from.path) {
+    //     // 切换页面时刷新评论
+    //     this.$router.go(0)
+    //     setTimeout(() => {
+    //       // this.initValine()
+    //     }, 300)
+    //   }
+    // }
   },
   methods: {
     getPageInfo () {

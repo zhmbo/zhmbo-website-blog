@@ -25,15 +25,14 @@
     > for Vuepress· 
     <span>
       <i class="iconfont jumbo-eye"></i>
-      <!-- <AccessNumber idVal="/blog/" /> -->
+      <AccessNumber idVal="/blog/" />
     </span>
+    <Comments :isShowComments="false"/>
   </div>
 </template>
 
 <script>
-import AccessNumber from './AccessNumber.vue'
 export default {
-  components: {AccessNumber},
    data () {
     return {
       numStyle: {

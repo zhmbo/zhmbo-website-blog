@@ -76,21 +76,35 @@ module.exports = [
       },
   }],
 
-  // 评论 valine
-  ["vuepress-plugin-comment", {
-    choosen: "valine",
+  ['@vuepress-reco/comments', {
+    solution: 'valine',
     options: {
-      el: "#valine-vuepress-comment",
       appId: "njGO225L16L7PmcnN4OnheBs-9Nh9j0Va",
       appKey: "vz210FuGo5NxnB8dNIvn4NHV",
+      placeholder: '填写邮箱可以收到回复哦!(支持 Markdown 语法)',
       visitor: true, // 阅读量统计
       notify: true,
+      verify: true, // 验证码
       avatar: 'retro',
       recordIP: true,
-      path: "<%- window.location.pathname %>",
-      // path: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>",
     },
   }],
+
+  // 评论 valine
+  // ["vuepress-plugin-comment", {
+  //   choosen: "valine",
+  //   options: {
+  //     el: "#valine-vuepress-comment",
+  //     appId: "njGO225L16L7PmcnN4OnheBs-9Nh9j0Va",
+  //     appKey: "vz210FuGo5NxnB8dNIvn4NHV",
+  //     visitor: true, // 阅读量统计
+  //     notify: true,
+  //     avatar: 'retro',
+  //     recordIP: true,
+  //     path: "<%- window.location.pathname %>",
+  //     // path: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>",
+  //   },
+  // }],
 
 // 评论 gitalk
 // ["vuepress-plugin-comment", {

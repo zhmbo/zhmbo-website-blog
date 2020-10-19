@@ -1,0 +1,83 @@
+.valine-wrapper
+  #valine.v
+    .vbtn
+      color: #2c3e50
+      color: var(--textColor)
+      border: 1px solid #eaecef
+      border-color var(--borderColor)
+      &:hover
+        color: $accentColor
+        border-color: $accentColor
+    .vwrap
+    //   background: rgba(27, 31, 35, 0.05)
+    //   background: var(--codeBg)
+      border: 1px solid #eaecef
+      border-color var(--borderColor)
+      .vheader .vinput
+        border-bottom: 1px dashed var(--borderColor)
+        &:focus
+          border-bottom-color $accentColor
+        &:-internal-autofill-selected
+          background-color: var(--codeBg) !important;
+    .vinfo
+      padding-left: .6rem
+    .vcard
+      .vquote
+        margin-left: 0
+        border-left: none
+      .vimg
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: .25rem
+        border: none
+      .vhead .vnick
+        color $accentColor
+        &::before
+          background $accentColor
+    .vh
+      border-bottom: none
+      .vhead .vsys
+        color: $accentColor
+        color: var(--textColor)
+        background: rgba(27, 31, 35, 0.05)
+        background: var(--codeBg)
+      .vmeta
+        margin-bottom: 1rem
+        .vat
+          margin-right: .3rem
+          background: rgba(27, 31, 35, 0.05)
+          background: var(--codeBg)
+          border-radius: .25rem
+          padding: 0 .4rem
+          color: var(--textColor)
+          border: 1px solid #eaecef
+          border-color var(--borderColor)
+          &:hover
+            color: $accentColor
+            border-color: $accentColor
+      .vcontent
+        background: rgba(27, 31, 35, 0.05)
+        background: var(--codeBg)
+        border-radius: .25rem
+        margin: 0 .3rem
+        padding: .1rem .6rem .05rem .6rem
+        p .at
+          color: $accentColor
+        &.expand:before
+          z-index 1
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff)
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--bodyBg))
+        &.expand:after
+          color: $accentColor
+          color: var(--textColor)
+          background: #fff
+          background: var(--bodyBg)
+    .info
+      padding-right: .6rem
+    code, pre, .vbtn
+      background var(--bodyBg)
+      color var(--textColor)
+    a
+      color $accentColor
+      &::before
+        background $accentColor
