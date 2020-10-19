@@ -67,7 +67,6 @@ export default {
     shouldShowComments () {
       const { comment } = this.$frontmatter
       const { showComment } = this.$themeConfig.valineConfig || { showComment: true }
-      console.log("是否显示评论：",(showComment !== false && comment !== false) || (showComment === false && comment === true));
       return (showComment !== false && comment !== false) || (showComment === false && comment === true)
     },
     bgStyle () {
