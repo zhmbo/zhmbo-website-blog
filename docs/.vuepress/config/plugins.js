@@ -65,7 +65,7 @@ module.exports = [
 
   // 百度统计
   ["vuepress-plugin-baidu-tongji", {
-      hm: "340ae86ed0846693ad7ca14ab6123a00",
+      hm: "270cbaad87cfce6296b2490fb8fc7b5d",
   }],
 
   // "上次更新"时间格式
