@@ -26,7 +26,7 @@
     <span>
       <i class="iconfont jumbo-eye"></i>
       <!-- see: -->
-      <AccessNumber idVal="/blog/" :numStyle="numStyle"/>
+      <AccessNumber idVal="/blog/" :numStyle="numStyle" flagTitle="首页"/>
     </span>
     <Comments :isShowComments="false"/>
   </div>
