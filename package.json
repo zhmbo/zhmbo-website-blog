@@ -10,7 +10,7 @@
     "publish": "cd theme-vdoing && npm publish && cd ../ && npm update vuepress-theme-vdoing",
     "git-push": "bash git-push.sh"
   },
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
