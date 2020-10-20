@@ -6,9 +6,9 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://itzhangbao.com && bash baiduPush.sh",
+    "baidu-push": "node utils/baidu-push.js https://itzhangbao.com && bash baidu-push.sh",
     "publish": "cd theme-vdoing && npm publish && cd ../ && npm update vuepress-theme-vdoing",
-    "gp": "bash git-push.sh"
+    "git-push": "bash git-push.sh"
   },
   "license": "MIT",
   "devDependencies": {
