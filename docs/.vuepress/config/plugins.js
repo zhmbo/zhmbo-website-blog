@@ -79,8 +79,8 @@ module.exports = [
   ['@vuepress-reco/comments', {
     solution: 'valine',
     options: {
-      appId: "njGO225L16L7PmcnN4OnheBs-9Nh9j0Va",
-      appKey: "vz210FuGo5NxnB8dNIvn4NHV",
+      appId: "HHUL6NPCmJLMBlKuwoctwByv-MdYXbMMI",
+      appKey: "I5hVTn1wDLP7LJC1v18MSjeA",
       placeholder: '填写邮箱可以收到回复哦!(支持 Markdown 语法)',
       visitor: true, // 阅读量统计
       notify: true,

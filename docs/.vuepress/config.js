@@ -11,7 +11,7 @@ module.exports = {
   // 标题
   title: "JumboのBlog",
   // 网站描述
-  description: "web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。", // 描述,以 <meta> 标签渲染到页面html中
+  description: "Jumbo的技术博客,专注iOS技术分享,iOS,OC,Objective-C,Swift,SwiftUI,Apple,上架,Flutter,OpenGL,Xcode,Github,RxSwift,算法,架构,面试,itzhangbao,zb,ZB,Jumbo,jumbo", // 描述,以 <meta> 标签渲染到页面html中
   // '/<github仓库名>/'， 默认'/'
   base: "/", 
   //指定 vuepress build 的输出目录
@@ -19,7 +19,7 @@ module.exports = {
   // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ["link", {rel: "icon", href: "/img/favicon.ico"}], //favicons，资源放在public文件夹
-    ["meta", {name: "keywords", content: "前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown"}],
+    ["meta", {name: "keywords", content: "Jumbo,itzhangbao,Jumbo的技术博客,个人博客,博客搭建,专注iOS技术分享,iOS,iOS进阶,iOS高级,OC,Objective-C,Swift,SwiftUI,Apple,上架,Flutter,OpenGL,Xcode,RxSwift,UIButton,UITableView,网络请求,Github,GithubActions,算法,架构,面试,itzhangbao,zb,ZB,Jumbo,jumbo"}],
     ["meta", {name: "baidu-site-verification", content: "7F55weZDDc"}], // 百度统计的站点拥有者验证
     ["meta", {name: "theme-color", content: "#11a8cd"}], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
