@@ -73,4 +73,7 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
+@media (max-width: $MQMobile)
+  .footer i
+    font-size 1.5rem
 </style>
