@@ -81,13 +81,13 @@ module.exports = [
     options: {
       appId: "HHUL6NPCmJLMBlKuwoctwByv-MdYXbMMI",
       appKey: "I5hVTn1wDLP7LJC1v18MSjeA",
-      placeholder: '填写邮箱可以收到回复哦!(支持 Markdown 语法)',
+      placeholder: '🌠填写邮箱可以收到回复哦!\n🚀评论支持 Markdown 语法\n🌶评论支持 AKISMET 垃圾过滤\n🌛期待您的建议与反馈',
       visitor: true, // 阅读量统计
       notify: true,
-      verify: true, // 验证码
-      avatar: 'retro',
+      avatar: 'wavatar',
       recordIP: true,
       meta:['nick', 'mail'],
+      requiredFields:['nick', 'mail'],
     },
   }],
 
