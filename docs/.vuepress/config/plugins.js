@@ -87,6 +87,7 @@ module.exports = [
       verify: true, // 验证码
       avatar: 'retro',
       recordIP: true,
+      meta:['nick', 'mail'],
     },
   }],
 
