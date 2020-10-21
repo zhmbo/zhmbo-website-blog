@@ -23,25 +23,14 @@
       title="本站主题"
       >Vdoing theme</a
     > for Vuepress ·
-    <span class="accessnumber">
-      <i class="iconfont jumbo-eye"></i>
-      <AccessNumber idVal="/blog/" :numStyle="numStyle" flagTitle="首页"/>
-    </span>
+    <i class="iconfont jumbo-eye"></i>
+    <AccessNumber idVal="/blog/" flagTitle="首页"/>
     <Comments :isShowComments="false"/>
   </div>
 </template>
 
 <script>
 export default {
-   data () {
-    return {
-      numStyle: {
-        fontSize: '.4rem',
-        fontWeight: 'normal',
-        color: '#777777'
-      },
-    }
-  },
   computed: {
     social() {
       return this.$themeConfig.social;
@@ -71,12 +60,9 @@ export default {
     color inherit
     &:hover
       color $accentColor
-  > span {
-    > i {
-      padding 0 02px
-      font-size .5rem
-    }
-  }
+  i 
+    font-size .5rem
+    
 @media (min-width ($MQMobile + 1px))
   .sidebar-open .footer
     width auto
@@ -87,10 +73,4 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
-
-@media (max-width: $MQMobile)
-  .footer .accessnumber
-    font-size 1.5rem
-    
-
 </style>
