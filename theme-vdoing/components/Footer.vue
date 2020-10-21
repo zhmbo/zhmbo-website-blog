@@ -23,11 +23,10 @@
       title="本站主题"
       >Vdoing theme</a
     > for Vuepress ·
-    <!-- <span> -->
+    <span class="accessnumber">
       <i class="iconfont jumbo-eye"></i>
-      <!-- see: -->
       <AccessNumber idVal="/blog/" :numStyle="numStyle" flagTitle="首页"/>
-    <!-- </span> -->
+    </span>
     <Comments :isShowComments="false"/>
   </div>
 </template>
@@ -72,10 +71,12 @@ export default {
     color inherit
     &:hover
       color $accentColor
-  i 
-    padding 0 02px
-    font-size .5rem
-    
+  > span {
+    > i {
+      padding 0 02px
+      font-size .5rem
+    }
+  }
 @media (min-width ($MQMobile + 1px))
   .sidebar-open .footer
     width auto
@@ -86,4 +87,10 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
+
+@media (max-width: $MQMobile)
+  .footer .accessnumber
+    font-size 1.5rem
+    
+
 </style>
