@@ -89,15 +89,4 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
-
-@media (max-width: $MQMobile) {
-  .footer {
-    text-align: left!important;
-    > span {
-      display block
-      margin-left 0
-      line-height 2rem
-    }
-  }
-}
 </style>
