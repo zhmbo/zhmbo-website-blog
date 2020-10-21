@@ -9,7 +9,7 @@ module.exports = {
   // 插件
   plugins,
   // 标题
-  title: "JumboのBlog",
+  title: "Jumbo",
   // 网站描述
   description: "Jumbo的技术博客,专注iOS技术分享,iOS,OC,Objective-C,Swift,SwiftUI,Apple,上架,Flutter,OpenGL,Xcode,Github,RxSwift,算法,架构,面试,itzhangbao,zb,ZB,Jumbo,jumbo", // 描述,以 <meta> 标签渲染到页面html中
   // '/<github仓库名>/'， 默认'/'
@@ -20,11 +20,9 @@ module.exports = {
   head: [
     ["link", {rel: "icon", href: "/img/favicon.ico"}], //favicons，资源放在public文件夹
     ["meta", {name: "keywords", content: "Jumbo,itzhangbao,Jumbo的技术博客,个人博客,博客搭建,专注iOS技术分享,iOS,iOS进阶,iOS高级,OC,Objective-C,Swift,SwiftUI,Apple,上架,Flutter,OpenGL,Xcode,RxSwift,UIButton,UITableView,网络请求,Github,GithubActions,算法,架构,面试,itzhangbao,zb,ZB,Jumbo,jumbo"}],
-    ["meta", {name: "baidu-site-verification", content: "7F55weZDDc"}], // 百度统计的站点拥有者验证
+    ["meta", {name: "baidu-site-verification", content: "code-l7ZsTFnxp5"}], // 百度统计的站点拥有者验证
     ["meta", {name: "theme-color", content: "#11a8cd"}], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
-    // 百度标签
-    ["meta", {name:"baidu-site-verification", content:"code-l7ZsTFnxp5"}],
     // 引入jquery
     ["script", {src: "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"}],
     // 引入鼠标点击脚本
