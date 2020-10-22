@@ -4,8 +4,10 @@
     :to="link"
     @focusout.native="focusoutAction"
     v-if="!isExternal(link)"
-    :exact="exact"
-  >{{ item.text }}</router-link>
+    :exact="exact">
+    <i :class="`iconfont ${item.icon}`"></i>
+    {{ item.text }}
+  </router-link>
   <a
     v-else
     :href="link"
@@ -14,6 +16,7 @@
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
     :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
   >
+    <i :class="`iconfont ${item.icon}`"></i>
     {{ item.text }}
     <OutboundLink />
   </a>

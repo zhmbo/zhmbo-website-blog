@@ -1,41 +1,45 @@
 <template>
   <header class="navbar blur">
-    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
-    <router-link :to="$localePath + 'blog/'" class="home-link">
-      <img
-        class="logo"
-        v-if="$site.themeConfig.logo"
-        :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
-      />
-      <span
-        ref="siteName"
-        class="site-name"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
-        >{{ $siteTitle }}</span
-      >
-    </router-link>
+    <div class="width-limit">
 
-    <div
-      class="links"
-      :style="
-        linksWrapMaxWidth
-          ? {
-              'max-width': linksWrapMaxWidth + 'px',
-            }
-          : {}
-      "
-    >
-      <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia" />
-      <SearchBox
-        v-else-if="
-          $site.themeConfig.search !== false &&
-            $page.frontmatter.search !== false
+      <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+
+      <router-link :to="$localePath + 'blog/'" class="home-link">
+        <img
+          class="logo"
+          v-if="$site.themeConfig.logo"
+          :src="$withBase($site.themeConfig.logo)"
+          :alt="$siteTitle"
+        />
+        <span
+          ref="siteName"
+          class="site-name"
+          v-if="$siteTitle"
+          :class="{ 'can-hide': $site.themeConfig.logo }"
+          >{{ $siteTitle }}</span
+        >
+      </router-link>
+
+      <div
+        class="links"
+        :style="
+          linksWrapMaxWidth
+            ? {
+                'max-width': linksWrapMaxWidth + 'px',
+              }
+            : {}
         "
-      />
-      <NavLinks class="can-hide" />
+      >
+        <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia" />
+        <SearchBox
+          v-else-if="
+            $site.themeConfig.search !== false &&
+              $page.frontmatter.search !== false
+          "
+        />
+        <NavLinks class="can-hide" />
+      </div>
     </div>
   </header>
 </template>
@@ -102,12 +106,16 @@ $navbar-horizontal-padding = 1.5rem
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   transition transform 0.3s
+.navbar .width-limit
+  // min-width: 1125px;
+  // max-width: 1440px;
+  // margin: 0 auto;
   a, span, img
     display inline-block
   .logo
     height $navbarHeight - 1.4rem
     min-width $navbarHeight - 1.4rem
-    margin-right 0.8rem
+    margin-right .8rem
     vertical-align top
   .site-name
     font-size 1.3rem
@@ -115,6 +123,12 @@ $navbar-horizontal-padding = 1.5rem
     color var(--textColor)
     position relative
   .links
+    // float: right;
+    // box-sizing border-box
+    // white-space nowrap
+    // font-size 0.9rem
+    // border-radius: 20px;
+    // font-size 0.9rem
     padding-left 1.5rem
     box-sizing border-box
     white-space nowrap
@@ -135,8 +149,9 @@ $navbar-horizontal-padding = 1.5rem
     .site-name
       display none
 @media (max-width $MQMobile)
-  .navbar
+  .navbar 
     padding-left 4rem
+  .navbar .width-limit
     .can-hide
       display none
     .links
