@@ -1,8 +1,8 @@
 ---
 home: true
 permalink: /blog/
-heroText: Hi，I`m Jumbo
-tagline: a ios developer🚀 from 深圳.
+# heroText: Hi, I`m Jumbo
+# tagline: a ios developer🚀 from 深圳.
 features:
 
   - title: iOS开发精粹

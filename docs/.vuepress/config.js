@@ -9,7 +9,7 @@ module.exports = {
   // 插件
   plugins,
   // 标题
-  // title: "Jumbo",
+  title: "Jumbo",
   // 网站描述
   description: "Jumbo的技术博客,专注iOS技术分享,iOS,OC,Objective-C,Swift,SwiftUI,Apple,上架,Flutter,OpenGL,Xcode,Github,RxSwift,算法,架构,面试,itzhangbao,zb,ZB,Jumbo,jumbo", // 描述,以 <meta> 标签渲染到页面html中
   // '/<github仓库名>/'， 默认'/'
