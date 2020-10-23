@@ -24,7 +24,7 @@
         </div>
 
         <PageEdit v-if="isShowEdit"/>
-        <PageNav v-bind="{ sidebarItems }" />
+        <PageNav v-if="isShowPageNav" v-bind="{ sidebarItems }" />
       </div>
 
       <UpdateArticle
@@ -78,6 +78,9 @@ export default {
     },
     isShowEdit () {
       return (this.$frontmatter.showEdit === false) ? false : true
+    },
+    isShowPageNav () {
+      return (this.$frontmatter.showPageNav === false) ? false : true
     },
     showTitle () {
       return !this.$frontmatter.pageComponent

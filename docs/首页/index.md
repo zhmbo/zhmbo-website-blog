@@ -1,27 +1,27 @@
 ---
 home: true
 permalink: /blog/
-heroText: Jumbo's blog
-tagline: iOS技术博客，积跬步以至千里，致敬每个爱学习的你。
+heroText: Hi，I`m Jumbo
+tagline: a ios developer🚀 from 深圳.
 features:
 
   - title: iOS开发精粹
 
     details: 如何从入门到放弃，你学废了吗？
     link: /pages/7354af/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201016153308.png
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023121737.png
 
   - title: iOS充电宝
 
     details: Swift5+、SwiftUI、iOS14、Xcode12
     link: /pages/0961cf/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201016154118.png
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023152211.png
 
   - title: 技术
 
     details: 技术文档、教程、技巧、总结等文章
     link: /technology/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/strip-20200903010603707.gif
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023151356.png
 
 title: 首页
 date: 2020-09-06 14:15:39

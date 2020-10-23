@@ -13,11 +13,17 @@
         v-if="item.link"
         :to="item.link"
         class="link-title"
-      >{{ item.text }}</router-link>
+      >
+        <i :class="`iconfont ${item.icon}`"></i>
+        {{ item.text }}
+      </router-link>
       <span
         class="title"
         v-show="!item.link"
-      >{{ item.text }}</span>
+      >
+        <i :class="`iconfont ${item.icon}`"></i>
+        {{ item.text }}
+      </span>
       <span
         class="arrow"
         :class="open ? 'down' : 'right'"

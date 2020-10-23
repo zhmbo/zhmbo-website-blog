@@ -3,7 +3,7 @@ module.exports = [
     text: '首页', link: '/blog/', icon: 'jumbo-home',
   },
   {
-    text: 'iOS', link: '/ios/',
+    text: 'iOS', link: '/ios/', icon: 'jumbo-ios',
     items: [
       {
         text: 'iOS开发精髓',
@@ -24,10 +24,10 @@ module.exports = [
     ]
   },
   {
-    text: '留言', link: '/leaveword/'
+    text: '留言', link: '/leaveword/', icon: 'jumbo-leaveword'
   },
   {
-    text: '索引', link: '/archives/',
+    text: '索引', link: '/archives/', icon: 'jumbo-suoyin',
     items: [
       {text: '分类', link: '/categories/'},
       {text: '标签', link: '/tags/'},
