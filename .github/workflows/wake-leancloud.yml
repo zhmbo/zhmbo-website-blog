@@ -1,0 +1,22 @@
+#自动激活LeanCloud
+name: AutoWakeUpLeanCLoud
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - "v*"
+  #  branches:
+  #    - master
+  schedule:
+    - cron: "*/18 0-15 * * *"
+  watch:
+    types: [started]
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
+    steps:
+      - name: 'GET请求LeanCloud'
+        run: curl lc-blog.itzhangbao.com
