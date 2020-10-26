@@ -1,18 +1,23 @@
 #自动激活LeanCloud
-name: AutoWakeUpLeanCLoud
+name: wake-leancloud
 
 on:
-  release:
-    types: [published]
   push:
-    tags:
-      - "v*"
-  #  branches:
-  #    - master
   schedule:
     - cron: "*/18 0-15 * * *"
-  watch:
-    types: [started]
+
+# on:
+#   release:
+#     types: [published]
+#   push:
+#     tags:
+#       - "v*"
+#   #  branches:
+#   #    - master
+#   schedule:
+#     - cron: "*/18 0-15 * * *"
+#   watch:
+#     types: [started]
 
 jobs:
   bot:
