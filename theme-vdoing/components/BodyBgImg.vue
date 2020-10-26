@@ -1,7 +1,7 @@
 <template>
   <div
     class="body-bg"
-    :style="`background: url(${bgImg}) center center / cover no-repeat;opacity:${opacity}`"
+    :style="`background: url(${bgImg}) center center / cover no-repeat;opacity:${opacity}; filter: grayscale(100%);`"
   ></div>
 </template>
 

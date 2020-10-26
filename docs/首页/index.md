@@ -1,19 +1,19 @@
 ---
 home: true
 permalink: /blog/
-# heroText: Hi, I`m Jumbo
+# heroText: Jumbo`Blog
 # tagline: a ios developer🚀 from 深圳.
 features:
 
   - title: iOS开发精粹
 
     details: 如何从入门到放弃，你学废了吗？
-    link: /pages/7354af/
+    link: /pages/3f0170/
     imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023121737.png
 
   - title: iOS充电宝
 
-    details: Swift5+、SwiftUI、iOS14、Xcode12
+    details: Swift5+、SwiftUI、iOS14
     link: /pages/0961cf/
     imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023152211.png
 
@@ -31,7 +31,8 @@ categories:
 
 tags:
   -
-
+  
+bannerBg: 'letter-spacing:2px;background-image:linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);background-size:20px 20px;background-position:center center;' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 # comment: false
 
 ---
