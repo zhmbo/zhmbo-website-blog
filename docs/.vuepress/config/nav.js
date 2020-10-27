@@ -1,13 +1,14 @@
 module.exports = [
   {
-    text: '首页', link: '/blog/', icon: 'jumbo-home',
+    text: '首页', link: '/blog/', icon: 'jumbo-nav-home',
   },
   {
-    text: 'iOS', link: '/ios/', icon: 'jumbo-ios',
+    text: 'iOS', link: '/ios/', icon: 'jumbo-apple',
     items: [
       {
         text: 'iOS开发精髓',
         items: [
+          {text: '介绍', link: '/pages/3f0170/'},
           {text: '从入门', link: '/pages/7354af/'},
           {text: '到放弃', link: '/pages/1b29d1/'}
         ]
@@ -24,7 +25,14 @@ module.exports = [
     ]
   },
   {
-    text: '留言', link: '/leaveword/', icon: 'jumbo-leaveword'
+    text: '技术', link: '/technology/', icon: 'jumbo-jishu',
+    items: [
+      {text: '博客', link: '/pages/4f2c93/'},
+      {text: 'Git', link: '/pages/fc9c93/'},
+    ]
+  },
+  {
+    text: '留言', link: '/leaveword/', icon: 'jumbo-liuyan'
   },
   {
     text: '索引', link: '/archives/', icon: 'jumbo-suoyin',
@@ -32,6 +40,8 @@ module.exports = [
       {text: '分类', link: '/categories/'},
       {text: '标签', link: '/tags/'},
       {text: '归档', link: '/archives/'},
+      {text: '友链', link: '/friends/'},
+      {text: '导航', link: '/navigation/'},
     ]
   }
 ];

@@ -8,7 +8,7 @@
         <li>
           <router-link
             to="/"
-            class="iconfont icon-home"
+            class="iconfont jumbo-home"
             title="首页"
           />
         </li>
@@ -180,7 +180,7 @@ export default {
             font-size 0.92rem
           &:hover
             color $accentColor
-        .icon-home
+        .jumbo-home
           text-decoration none
     .info
       float right

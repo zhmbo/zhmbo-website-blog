@@ -81,10 +81,11 @@ export default {
       }
     },
     getCatalogueList () {
+      console.log(this.$site.themeConfig)
       const { sidebar } = this.$site.themeConfig
       var keys = this.$frontmatter.pageComponent.data.keys
       var catalogueList
-
+      
       if (typeof keys === 'string') {
         catalogueList = sidebar[`/${keys}/`]
       }else {

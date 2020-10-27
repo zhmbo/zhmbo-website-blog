@@ -20,14 +20,14 @@
           <div class="article-info">
             <a
               title="作者"
-              class="iconfont icon-touxiang"
+              class="iconfont jumbo-touxiang"
               target="_blank"
               v-if="item.author && item.author.href"
               :href="item.author.href"
             >{{ item.author.name ? item.author.name : item.author }}</a>
             <span
               title="作者"
-              class="iconfont icon-touxiang"
+              class="iconfont jumbo-touxiang"
               v-else-if="item.author"
             >{{ item.author.name ? item.author.name : item.author }}</span>
 
