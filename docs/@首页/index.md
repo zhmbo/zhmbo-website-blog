@@ -5,23 +5,23 @@ permalink: /blog/
 # tagline: a ios developer🚀 from 深圳.
 features:
 
-  - title: iOS开发精粹
+  - title: 开发精粹
 
     details: 如何从入门到放弃，你学废了吗？
     link: /pages/3f0170/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023121737.png
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201029184846.png
 
-  - title: iOS充电宝
+  - title: 充电宝
 
     details: Swift5+、SwiftUI、iOS14
     link: /pages/0961cf/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023152211.png
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201029184855.png
 
   - title: 技术
 
     details: 技术文档、教程、技巧、总结等文章
     link: /technology/
-    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201023151356.png
+    imgUrl: https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201029184903.png
 
 title: 首页
 date: 2020-09-06 14:15:39
@@ -36,6 +36,7 @@ bannerBg: 'letter-spacing:2px;background-image:linear-gradient(90deg, rgba(50, 0
 # comment: false
 
 ---
+
 
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px; height: 115px; opacity: 0.8; margin-bottom: -4px; padding-bottom:0; position: fixed; bottom: 0; left: 0.5rem; z-index: 1; "> -->

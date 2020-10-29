@@ -413,8 +413,8 @@ export default {
           // color lighten($bannerTextColor,10%)
           color inherit
           .feature-img
-            width 10rem
-            height 10rem
+            width 14rem
+            height 14rem
             animation heart 1.2s ease-in-out 0s infinite alternate
             animation-play-state paused
           h2

@@ -24,9 +24,10 @@ module.exports = {
     ["meta", {name: "theme-color", content: "#11a8cd"}], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
     // 引入jquery
-    ["script", {src: "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"}],
+    ["script", {src: "/js/jquery.min.js"}],
     // 引入鼠标点击脚本
-    ["script", {src: "/js/MouseClickEffect.js"}]
+    ["script", {src: "/js/MouseClickEffect.js"}],
+    ["script", {src: "/js/FooterFish.js"}],
   ],
 
   // 代码行号

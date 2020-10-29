@@ -58,6 +58,7 @@
     </Page>
 
     <Footer v-if="$frontmatter.home" />
+    <!-- <Footer /> -->
 
     <Buttons
       ref="buttons"
