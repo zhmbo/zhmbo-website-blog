@@ -43,7 +43,16 @@ export default {
     },
   },
   mounted () {
-    // RENDERER.init();
+    RENDERER.init();
+  },
+  watch: {
+    '$route' (to, from) {
+      if (to.path !== from.path) {
+        setTimeout(() => {
+          RENDERER.init();
+        }, 300)
+      }
+    }
   }
 };
 </script>
