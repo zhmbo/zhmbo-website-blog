@@ -3,7 +3,8 @@ var RENDERER = {
 	FISH_COUNT : 3,
 	MAX_INTERVAL_COUNT : 50,
 	INIT_HEIGHT_RATE : 0.5,
-	THRESHOLD : 50,
+  THRESHOLD : 50,
+  THEME : '',
 	
 	init : function(){
     if ($('#footer-canvas').length > 0) return;
@@ -144,8 +145,11 @@ var RENDERER = {
 		requestAnimationFrame(this.render);
 		this.controlStatus();
 		this.context.clearRect(0, 0, this.width, this.height);
-		this.context.fillStyle = 'hsla(0,0%,80%,0.3)';
-		
+    // this.context.fillStyle = 'hsla(0,0%,80%,0.3)';
+    if (this.THEME.length > 0) {
+      FooterFishTheme(this.THEME)
+    }
+
 		for(var i = 0, count = this.fishes.length; i < count; i++){
 			this.fishes[i].render(this.context);
 		}
@@ -331,8 +335,21 @@ FISH.prototype = {
 	}
 };
 
+function FooterFishTheme (theme) {
+  RENDERER.THEME = theme
+  if (theme === 'dark') { 
+    RENDERER.context.fillStyle = 'rgba(30,30,34,0.3)';
+  }else if (theme === 'light') {
+    RENDERER.context.fillStyle = 'hsla(0,0%,80%,0.3)';
+  } else {
+    RENDERER.context.fillStyle = 'rgba(245,245,213,0.3)';
+  }
+}
+
 // $(function(){
 //   setTimeout(function () {
-//     RENDERER.init();
+// 		// this.context.fillStyle = 'hsla(0,0%,80%,0.3)';
+// 		RENDERER.context.fillStyle = 'rgba(30,30,34,0.5)';
+    
 //   }, 2000);
 // });

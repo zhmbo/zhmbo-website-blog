@@ -20,6 +20,7 @@ module.exports = [
           {text: 'SwiftUI', link: '/pages/5cb5f0/'},
           {text: 'iOS14', link: '/pages/9e761f/'},
           {text: 'Xcode12', link: '/pages/5e2170/'},
+          {text: 'iOS周边', link: '/pages/554b82/'},
         ]
       },
     ]
@@ -28,7 +29,11 @@ module.exports = [
     text: '技术', link: '/technology/', icon: 'jumbo-jishu',
     items: [
       {text: '博客', link: '/pages/4f2c93/'},
-      {text: 'Git', link: '/pages/fc9c93/'},
+      {text: 'Github', link: '/pages/6cbba7/'},
+      {text: 'CocosCreator', link: '/pages/d9a627/'},
+      {text: '笔记', link: '/pages/9af5e1/'},
+      {text: '工具', link: '/pages/46944a/'},
+      {text: 'Android', link: '/pages/4b617e/'},
     ]
   },
   {
