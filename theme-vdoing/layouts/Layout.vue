@@ -178,7 +178,8 @@ export default {
   },
   mounted () {
 
-		FooterFishTheme(this.themeMode)
+    FooterFishTheme(this.themeMode)
+    
     // 初始化页面时链接锚点无法跳转到指定id的解决方案
     const hash = document.location.hash;
     if (hash.length > 1) {
