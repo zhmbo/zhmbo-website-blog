@@ -9,8 +9,9 @@ module.exports = {
     serach: true,
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     algolia: {
-      apiKey: '<API_KEY>',
-      indexName: '<INDEX_NAME>'
+      applicationID:'E2X1WZ4JEZ',
+      apiKey: '56a206ee69894ea374a390edcf5df547',
+      indexName: 'jumboblog'
     },
     lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹
