@@ -3,7 +3,7 @@ const nav = require("./nav.js");
 // 主题配置
 module.exports = {
     nav, // 导航
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 1, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201011161451.png", // 导航栏logo
     // repo: "itzhangbao", // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数

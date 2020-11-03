@@ -34,6 +34,7 @@ module.exports = [
       {text: '笔记', link: '/pages/9af5e1/'},
       {text: '工具', link: '/pages/46944a/'},
       {text: 'Android', link: '/pages/4b617e/'},
+      {text: 'Git', link: '/pages/6ee1a4/'},
     ]
   },
   {

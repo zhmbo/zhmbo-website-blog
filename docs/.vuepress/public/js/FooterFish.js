@@ -337,6 +337,7 @@ FISH.prototype = {
 
 function FooterFishTheme (theme) {
   RENDERER.THEME = theme
+  if ($("#footer-canvas").length <= 0) return
   if (theme === 'dark') { 
     RENDERER.context.fillStyle = 'rgba(30,30,34,0.3)';
   }else if (theme === 'light') {

@@ -10,7 +10,7 @@
         class="banner-conent"
         :style="!homeData.features && !homeData.heroImage && `padding-top: 7rem`"
       >
-        <header class="hero">
+        <header class="hero" v-if="homeData.heroImage && homeData.heroText && homeData.actionText && homeData.actionLink">
           <img
             v-if="homeData.heroImage"
             :src="$withBase(homeData.heroImage)"
@@ -354,7 +354,7 @@ export default {
 .home-wrapper
   .banner
     width 100%
-    min-height 450px
+    min-height 300px
     margin-top $navbarHeight
     color $bannerTextColor
     position relative
@@ -413,8 +413,8 @@ export default {
           // color lighten($bannerTextColor,10%)
           color inherit
           .feature-img
-            width 14rem
-            height 14rem
+            width 13rem
+            height 13rem
             animation heart 1.2s ease-in-out 0s infinite alternate
             animation-play-state paused
           h2

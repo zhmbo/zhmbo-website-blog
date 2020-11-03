@@ -64,8 +64,8 @@
       ref="buttons"
       @toggle-theme-mode="toggleThemeMode"
     />
-
     <BodyBgImg v-if="$themeConfig.bodyBgImg" />
+    <Password v-if="!isHasPageKey" :isPage="true" class="password-wrapper-in" key="in"/>
   </div>
 </template>
 
@@ -83,19 +83,22 @@ import BodyBgImg from '@theme/components/BodyBgImg'
 import { resolveSidebarItems } from '../util'
 import storage from 'good-storage' // 本地存储
 import _ from 'lodash'
+import Password from '@theme/components/Password'
 
 const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
-  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg,Password },
 
   data () {
     return {
       hideNavbar: false,
       isSidebarOpen: true,
       showSidebar: false,
-      themeMode: 'light'
+      themeMode: 'light',
+      isHasPageKey: true,
+      isHasKey: true,
     }
   },
   computed: {
@@ -175,11 +178,9 @@ export default {
       this.themeMode = mode
     }
     this.setBodyClass()
+    FooterFishTheme(this.themeMode)
   },
   mounted () {
-
-    FooterFishTheme(this.themeMode)
-    
     // 初始化页面时链接锚点无法跳转到指定id的解决方案
     const hash = document.location.hash;
     if (hash.length > 1) {
@@ -208,6 +209,9 @@ export default {
       }
     }, 300))
 
+    this.hasKey()
+    this.hasPageKey()
+    this.hiddenOverflow(this.isHasPageKey)
   },
   watch: {
     isSidebarOpen () {
@@ -217,9 +221,21 @@ export default {
     },
     themeMode () {
       this.setBodyClass()
+    },
+    $frontmatter (newVal, oldVal) {
+      this.hasKey()
+      this.hasPageKey()
+      this.hiddenOverflow(this.isHasPageKey)
     }
   },
   methods: {
+    hiddenOverflow(val){
+      if (!val) {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+      document.documentElement.style.overflow=!val?'hidden':'auto';
+      document.body.style.overflow=!val?'hidden':'auto';//手机版设置这个。
+    },
     setBodyClass () {
       document.body.className = 'theme-mode-' + this.themeMode
     },
@@ -284,6 +300,30 @@ export default {
         linkElm.setAttribute("href", social.iconfontCssFile)
         document.head.appendChild(linkElm)
       }
+    },
+
+    hasKey () {
+      const keyPage = this.$themeConfig.keyPage
+      if (!keyPage || !keyPage.keys || keyPage.keys.length === 0) {
+        this.isHasKey = true
+        return
+      }
+
+      let { keys } = keyPage
+      keys = keys.map(item => item.toLowerCase())
+      this.isHasKey = keys && keys.indexOf(sessionStorage.getItem('key')) > -1
+    },
+
+    hasPageKey () {
+      let pageKeys = this.$frontmatter.keys
+      if (!pageKeys || pageKeys.length === 0) {
+        this.isHasPageKey = true
+        return
+      }
+
+      pageKeys = pageKeys.map(item => item.toLowerCase())
+
+      this.isHasPageKey = pageKeys.indexOf(sessionStorage.getItem(`pageKey${window.location.pathname}`)) > -1
     },
   }
 }

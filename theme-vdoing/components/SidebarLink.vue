@@ -44,10 +44,10 @@ export default {
       || $themeConfig.displayAllHeaders
 
     if (item.type === 'auto') {
-      return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth)]
+      return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth, $page)]
     } else if ((active || displayAllHeaders) && item.headers && !hashRE.test(item.path)) {
       const children = groupHeaders(item.headers)
-      return [link, renderChildren(h, children, item.path, $route, maxDepth)]
+      return [link, renderChildren(h, children, item.path, $route, maxDepth, $page)]
     } else {
       return link
     }
@@ -68,13 +68,22 @@ function renderLink (h, to, text, active) {
   }, text)
 }
 
-function renderChildren (h, children, path, route, maxDepth, depth = 1) {
-  if (!children || depth > maxDepth) return null
+function renderChildren (h, children, path, route, maxDepth, page, depth = 1) {
+  let isHasPageKey = true
+  let pageKeys = page.frontmatter.keys
+  if (!pageKeys || pageKeys.length === 0) {
+    isHasPageKey = true
+  }else {
+    pageKeys = pageKeys.map(item => item.toLowerCase())
+    isHasPageKey = pageKeys.indexOf(sessionStorage.getItem(`pageKey${window.location.pathname}`)) > -1
+  }
+
+  if (!children || depth > maxDepth || !isHasPageKey) return null
   return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {
     const active = isActive(route, path + '#' + c.slug)
     return h('li', { class: 'sidebar-sub-header' }, [
       renderLink(h, path + '#' + c.slug, c.title, active),
-      renderChildren(h, c.children, path, route, maxDepth, depth + 1)
+      renderChildren(h, c.children, path, route, maxDepth, page, depth + 1)
     ])
   }))
 }

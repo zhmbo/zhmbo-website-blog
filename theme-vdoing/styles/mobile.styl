@@ -18,7 +18,8 @@ $mobileSidebarWidth = $sidebarWidth * 0.9
     &.sidebar-open
       .page
         padding-left ($mobileSidebarWidth + .8rem)!important
-
+      .password-wrapper-in
+        padding-left $mobileSidebarWidth!important
 // wide mobile
 @media (max-width: $MQMobile)
   .sidebar
@@ -28,6 +29,8 @@ $mobileSidebarWidth = $sidebarWidth * 0.9
     transform translateX(-100%)
     transition transform .2s ease
   .page
+    padding-left 0
+  .password-wrapper-in
     padding-left 0
   .theme-container
     &.sidebar-open
@@ -61,11 +64,17 @@ $mobileSidebarWidth = $sidebarWidth * 0.9
       .page
         padding-left ($sidebarWidth + .8rem)
         padding-right .8rem
+      .password-wrapper-in
+        padding-left $sidebarWidth
     &.have-rightmenu
       .page
         padding-right ($rightMenuWidth + .8rem)
+      // .password-wrapper-in
+      //   padding-right $rightMenuWidth
     &.no-sidebar
       .page
+        padding-left 0!important
+      .password-wrapper-in
         padding-left 0!important
   @media (max-width: $MQNarrow)
     .theme-container

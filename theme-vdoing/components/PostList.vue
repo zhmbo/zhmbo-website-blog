@@ -68,10 +68,10 @@
             class="excerpt"
             v-html="item.excerpt"
           ></div>
-          <router-link
+          <!-- <router-link
             :to="item.path"
             class="readmore iconfont icon-jiantou-you"
-          >阅读全文</router-link>
+          >阅读全文</router-link> -->
         </div>
       </div>
     </transition-group>
@@ -163,7 +163,7 @@ export default {
   margin-bottom 4rem
   .post
     position relative
-    padding 1rem 1.5rem
+    padding .8rem 1.5rem
     margin-bottom 0.9rem
     transition all 0.3s
     &.post-leave-active
@@ -208,16 +208,18 @@ export default {
     .excerpt-wrapper
       border-top 1px solid var(--borderColor)
       margin 0.5rem 0
-      overflow hidden
+      // overflow hidden
       .excerpt
-        margin-bottom 0.3rem
+        // margin-bottom 0.3rem
         font-size 0.92rem
         h1, h2, h3
           display none
         img
-          max-height 280px
+          // max-height 280px
           max-width 100% !important
           margin 0 auto
+        p
+          line-height 1.5rem
       .readmore
         float right
         margin-right 1rem
