@@ -33,7 +33,7 @@
         v-if="isShowUpdateBar"
       />
 
-      <Comments v-if="true" :isShowComments="shouldShowComments"/>
+      <Comments :isShowComments="shouldShowComments"/>
 
       <slot name="bottom" />
     </main>
