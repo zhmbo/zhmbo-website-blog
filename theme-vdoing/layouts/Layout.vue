@@ -233,8 +233,8 @@ export default {
       if (!val) {
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
-      document.documentElement.style.overflow=!val?'hidden':'auto';
-      document.body.style.overflow=!val?'hidden':'auto';//手机版设置这个。
+      document.documentElement.style.overflow=!val?'hidden':'';
+      document.body.style.overflow=!val?'hidden':'';//手机版设置这个。
     },
     setBodyClass () {
       document.body.className = 'theme-mode-' + this.themeMode
