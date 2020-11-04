@@ -13,7 +13,7 @@
         @focus="inputFocus"
         @blur="inputBlur">
       <span>{{warningText}}</span>
-      <button ref="passwordBtn" @click="inter">OK</button>
+      <button ref="passwordBtn" @click="inter">试试</button>
     </label>
     
   </div>
