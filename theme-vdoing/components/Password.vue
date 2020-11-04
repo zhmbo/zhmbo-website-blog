@@ -56,7 +56,7 @@ export default {
         return
       }
 
-      this.warningText = '试试就试试'
+      this.warningText = '瞅你咋地~'
 
       const width = document.getElementById('box').style.width
 
