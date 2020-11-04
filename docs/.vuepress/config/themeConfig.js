@@ -3,14 +3,14 @@ const nav = require("./nav.js");
 // 主题配置
 module.exports = {
     nav, // 导航
-    sidebarDepth: 1, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201011161451.png", // 导航栏logo
     // repo: "itzhangbao", // 导航栏右侧生成Github链接
     serach: true,
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     algolia: {
-      applicationID:'E2X1WZ4JEZ',
-      apiKey: '56a206ee69894ea374a390edcf5df547',
+      appId:'E2X1WZ4JEZ',
+      apiKey: 'a644874c4aa0c6c536214c4470afb580',
       indexName: 'jumboblog'
     },
     lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
