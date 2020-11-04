@@ -3,7 +3,7 @@
 
     <h3 class="title">{{isPage ? $frontmatter.title : $site.title || $localeConfig.title}}</h3>
     
-    <p class="description" v-if="!isPage">{{$site.description || $localeConfig.description}}</p>
+    <p class="description" v-if="isPage">{{$frontmatter.description || $site.description || $localeConfig.description}}</p>
 
     <label class="inputBox" id="box">
       <input
