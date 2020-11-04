@@ -68,8 +68,13 @@ export default {
     },
     inputFocus () {
       this.warningText = '别试容易怀孕'
+      // setTimeout(() => {
+      //   window.scrollTo({ top: 0, behavior: 'smooth' })
+      //   document.body.style.overflow='hidden';
+      // }, 100);
     },
     inputBlur () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
       this.warningText = '你瞅啥~'
     },
     isHasKey () {
@@ -124,10 +129,10 @@ export default {
   }
   .inputBox{
     position relative
-    top 20%
-    left 0
-    right 0
-    margin auto
+    // top 20%
+    // left 0
+    // right 0
+    margin 10rem auto 2rem
     display block
     max-width:700px;
     height: 100px;
@@ -223,7 +228,7 @@ export default {
       position: absolute;
       left 0
       right 0
-      top 43%
+      top 8%
       margin auto 20px
       padding-left 0
       box-sizing border-box

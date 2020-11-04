@@ -66,6 +66,9 @@
     />
     <BodyBgImg v-if="$themeConfig.bodyBgImg" />
     <Password v-if="!isHasPageKey" :isPage="true" class="password-wrapper-in" key="in"/>
+    <div :class="{ 'hide': !isHasPageKey }">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -232,9 +235,15 @@ export default {
     hiddenOverflow(val){
       if (!val) {
         window.scrollTo({ top: 0, behavior: 'smooth' })
+
+        document.documentElement.style.overflow='hidden';
+        document.body.style.overflow='hidden';
+        $('body').css({'position':'fixed',"width":"100%"});
+      }else {
+        document.documentElement.style.overflow='';
+        document.body.style.overflow='';
+        $('body').css({'position':'',"width":""});  
       }
-      document.documentElement.style.overflow=!val?'hidden':'';
-      document.body.style.overflow=!val?'hidden':'';//手机版设置这个。
     },
     setBodyClass () {
       document.body.className = 'theme-mode-' + this.themeMode

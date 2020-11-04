@@ -8,11 +8,14 @@ module.exports = {
     // repo: "itzhangbao", // 导航栏右侧生成Github链接
     serach: true,
     searchMaxSuggestions: 10, // 搜索结果显示最大数
-    algolia: {
-      appId:'E2X1WZ4JEZ',
-      apiKey: 'a644874c4aa0c6c536214c4470afb580',
-      indexName: 'jumboblog'
-    },
+    // algolia: {
+    //   appId:'E2X1WZ4JEZ',
+    //   apiKey: '55f8f3e0bca4acf7a6d7e1eb1bae0004',
+    //   indexName: 'jumboblog',
+    //   algoliaOptions: {
+    //     facetFilters: ""
+    //   }
+    // },
     lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹
     editLinks: true, // 启用编辑
