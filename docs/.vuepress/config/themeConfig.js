@@ -4,6 +4,7 @@ const nav = require("./nav.js");
 module.exports = {
     nav, // 导航
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    // navTitle: 'Jumbo',
     logo: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20201011161451.png", // 导航栏logo
     // repo: "itzhangbao", // 导航栏右侧生成Github链接
     serach: true,
@@ -62,8 +63,9 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     blogger: {
       avatar: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20200919111632.png",
-      name: "jumbo",
+      name: "@jumbo",
       slogan: "an ios developer",
+      year: '2014-2020'
     },
 
     // 社交图标，显示于博主信息栏和页脚栏

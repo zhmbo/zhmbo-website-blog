@@ -12,13 +12,13 @@
           :src="$withBase($site.themeConfig.logo)"
           :alt="$siteTitle"
         />
-        <!-- <span
+        <span
           ref="siteName"
           class="site-name"
-          v-if="$siteTitle"
-          :class="{ 'can-hide': $site.themeConfig.logo }"
-          >{{ $siteTitle }}</span
-        > -->
+          v-if="$site.themeConfig.navTitle"
+          :class="{ 'can-hide': $site.themeConfig.navTitle }"
+          >{{ $site.themeConfig.navTitle }}</span
+        >
       </router-link>
 
       <div
@@ -122,6 +122,7 @@ $navbar-horizontal-padding = 1.5rem
     font-weight 600
     color var(--textColor)
     position relative
+    vertical-align middle
   .links
     // float: right;
     // box-sizing border-box

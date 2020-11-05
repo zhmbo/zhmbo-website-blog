@@ -24,6 +24,7 @@
     <div class="blogger">
       <span class="name">{{blogger.name}}</span>
       <span class="slogan">{{blogger.slogan}}</span>
+      <span class="year">{{blogger.year}}</span>
     </div>
   </aside>
 </template>
@@ -78,4 +79,6 @@ export default {
       margin-bottom 6px
     .slogan
       color var(--textColor)
+    .year
+      font-size .9rem
 </style>
