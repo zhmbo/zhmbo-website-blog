@@ -86,6 +86,7 @@ module.exports = [
       notify: true,
       avatar: 'wavatar',
       recordIP: true,
+      enableQQ: true,
       meta:['nick', 'mail'],
       requiredFields:['nick', 'mail'],
     },
