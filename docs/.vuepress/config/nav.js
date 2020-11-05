@@ -48,6 +48,7 @@ module.exports = [
       {text: '归档', link: '/archives/'},
       {text: '友链', link: '/friends/'},
       {text: '导航', link: '/navigation/'},
+      {text: '寻Me', link: '/findme/'},
     ]
   }
 ];
