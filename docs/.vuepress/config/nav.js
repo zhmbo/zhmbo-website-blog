@@ -16,13 +16,21 @@ module.exports = [
       {
         text: 'iOS充电宝',
         items: [
-          {text: 'Swift5+', link: '/pages/0961cf/'},
           {text: 'SwiftUI', link: '/pages/5cb5f0/'},
           {text: 'iOS14', link: '/pages/9e761f/'},
           {text: 'Xcode12', link: '/pages/5e2170/'},
           {text: 'iOS周边', link: '/pages/554b82/'},
         ]
       },
+    ]
+  },
+  {
+    text: 'Swift', link: '/swift/', icon: 'jumbo-swift',
+    items: [
+      {text: '概览', link: '/pages/04ed05/'},
+      {text: '欢迎来到Swift', link: '/pages/cf2b9a/'},
+      {text: 'Swift语法', link: '/pages/d9a627/'},
+      {text: '语言参考', link: '/pages/9af5e1/'},
     ]
   },
   {
