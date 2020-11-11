@@ -29,7 +29,7 @@ module.exports = [
     items: [
       {text: '概览', link: '/pages/04ed05/'},
       {text: '欢迎来到Swift', link: '/pages/cf2b9a/'},
-      {text: 'Swift语法', link: '/pages/d9a627/'},
+      {text: 'Swift语法', link: '/pages/9e2f81/'},
       {text: '语言参考', link: '/pages/9af5e1/'},
     ]
   },
