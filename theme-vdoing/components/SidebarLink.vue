@@ -74,8 +74,7 @@ function renderChildren (h, children, path, route, maxDepth, page, depth = 1) {
   if (!pageKeys || pageKeys.length === 0) {
     isHasPageKey = true
   }else {
-    pageKeys = pageKeys.map(item => item.toLowerCase())
-    isHasPageKey = pageKeys.indexOf(sessionStorage.getItem(`pageKey${window.location.pathname}`)) > -1
+      isHasPageKey = false
   }
 
   if (!children || depth > maxDepth || !isHasPageKey) return null
