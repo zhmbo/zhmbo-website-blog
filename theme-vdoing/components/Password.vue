@@ -3,7 +3,7 @@
 
     <h3 class="title">{{isPage ? $frontmatter.title : $site.title || $localeConfig.title}}</h3>
     
-    <!-- <p class="description" v-if="isPage">{{$frontmatter.description}}</p> -->
+    <p class="description" v-if="isPage">{{$frontmatter.description}}</p>
 
     <label class="inputBox" id="box">
       <input
@@ -68,10 +68,6 @@ export default {
     },
     inputFocus () {
       this.warningText = '别试容易怀孕'
-      // setTimeout(() => {
-      //   window.scrollTo({ top: 0, behavior: 'smooth' })
-      //   document.body.style.overflow='hidden';
-      // }, 100);
     },
     inputBlur () {
       window.scrollTo({ top: 0, behavior: 'smooth' })
