@@ -1,3 +1,11 @@
+---
+title: swift string和array互转
+date: 2020-12-12 15:45:04
+permalink: /pages/7a5e96/
+article: false
+sidebar: false
+showPageNav: false
+---
 ### 将一个`Character`s 数组转换为一个`String`没有分隔符的数组：
 
 ```

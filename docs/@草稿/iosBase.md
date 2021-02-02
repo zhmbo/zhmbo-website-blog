@@ -1,3 +1,11 @@
+---
+title: iosBase
+date: 2021-01-15 14:15:35
+permalink: /pages/98182b/
+article: false
+sidebar: false
+showPageNav: false
+---
 #### Debug
 
 [FLEX](https://github.com/FLEXTool/FLEX)

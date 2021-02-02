@@ -1,3 +1,11 @@
+---
+title: ios 向下向上取整
+date: 2020-12-28 17:03:59
+permalink: /pages/3260b4/
+article: false
+sidebar: false
+showPageNav: false
+---
 # [OS 向下取整、向上取整、四舍五入](https://www.cnblogs.com/muzijie/p/6489149.html)
 
 向上取整：float ceilf(float);   double ceil(double);
