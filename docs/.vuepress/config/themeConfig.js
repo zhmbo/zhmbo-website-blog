@@ -65,7 +65,7 @@ module.exports = {
       avatar: "https://cdn.jsdelivr.net/gh/itzhangbao/supplies/img/20200919111632.png",
       name: "@jumbo",
       slogan: "an ios developer",
-      year: '2014-2020'
+      year: '2014.'
     },
 
     // 社交图标，显示于博主信息栏和页脚栏
