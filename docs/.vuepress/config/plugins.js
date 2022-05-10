@@ -81,6 +81,7 @@ module.exports = [
     options: {
       appId: "HHUL6NPCmJLMBlKuwoctwByv-MdYXbMMI",
       appKey: "I5hVTn1wDLP7LJC1v18MSjeA",
+      serverURLs: "https://lc-blog.itzhangbao.com",
       placeholder: '🌠填写邮箱可以收到回复哦!\r\n🚀评论支持 Markdown 语法\r\n🌶评论支持 AKISMET 垃圾过滤\r\n🌛Powered By Valine',
       visitor: true, // 阅读量统计
       notify: true,
