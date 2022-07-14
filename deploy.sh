@@ -29,11 +29,11 @@ git push -f ${githubUrl} master:site-blog
 find . -name ".git" | xargs rm -Rf
 
 #四、克隆【site-official】
-# echo "四、克隆【site-official】"
+echo "四、克隆【site-official】"
 cd -
-# git clone -b site-official $githubUrl official
-# find official -name ".git" | xargs rm -Rf
-# mv -f official/* dist
+git clone -b site-official $githubUrl official
+find official -name ".git" | xargs rm -Rf
+mv -f official/* dist
 
 #五、部署到【master】
 echo "五、部署到【master】"
