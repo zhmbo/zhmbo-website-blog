@@ -4,7 +4,7 @@ pageComponent:
   data: 
     keys: 
       - 01.Swift编程语言
-    imgUrl: https://static.itzhangbao.com/img/20201110144937.png
+    imgUrl: https://static.zhmbo.cn/img/20201110144937.png
     description: 《Swift编程语言》官方中文指南
 title: Swift
 permalink: /swift/

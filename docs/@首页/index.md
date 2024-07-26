@@ -8,19 +8,19 @@ features:
 
       details: 如何从入门到放弃，你学废了吗？
       link: /pages/3f0170/
-      imgUrl: https://static.itzhangbao.com/img/20201029182647.png
+      imgUrl: https://static.zhmbo.cn/img/20201029182647.png
 
     - title: 充电宝
 
       details: Swift5+、SwiftUI、iOS14
       link: /pages/0961cf/
-      imgUrl: https://static.itzhangbao.com/img/20201029182655.png
+      imgUrl: https://static.zhmbo.cn/img/20201029182655.png
 
     - title: 技术
 
       details: 技术文档、教程、技巧、总结等文章
       link: /technology/
-      imgUrl: https://static.itzhangbao.com/img/20201029182710.png
+      imgUrl: https://static.zhmbo.cn/img/20201029182710.png
 
 title: 首页
 date: 2020-09-06 14:15:39

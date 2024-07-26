@@ -4,7 +4,7 @@ pageComponent:
   data: 
     keys: 
       - 30.技术
-    imgUrl: https://static.itzhangbao.com/img/20201023151356.png
+    imgUrl: https://static.zhmbo.cn/img/20201023151356.png
     description: 技术文档、教程、技巧、总结
 title: 技术
 permalink: /technology/

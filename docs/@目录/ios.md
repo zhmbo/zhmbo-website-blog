@@ -5,7 +5,7 @@ pageComponent:
     keys:
       - 10.iOS开发精髓
       - 20.iOS充电宝
-    imgUrl: https://static.itzhangbao.com/img/20201023121737.png
+    imgUrl: https://static.zhmbo.cn/img/20201023121737.png
     description: iOS开发精髓 | iOS充电宝
 title: iOS开发
 permalink: /ios/
