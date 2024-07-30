@@ -6,7 +6,7 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "baidu-push": "node utils/baidu-push.js https://itzhangbao.com && bash baidu-push.sh",
+    "baidu-push": "node utils/baidu-push.js https://zhmbo.cn && bash baidu-push.sh",
     "publish": "cd theme-vdoing && npm publish && cd ../ && npm update vuepress-theme-vdoing",
     "git-push": "bash git-push.sh"
   },

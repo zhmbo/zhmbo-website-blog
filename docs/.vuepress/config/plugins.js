@@ -24,7 +24,7 @@ module.exports = [
         },
         {
           title: "通过百度搜索本站的",
-          frontUrl: "https://www.baidu.com/s?wd=site%3Aitzhangbao.com%20",
+          frontUrl: "https://www.baidu.com/s?wd=site%3Azhmbo.cn%20",
         },
       ]
   }],
@@ -121,8 +121,8 @@ module.exports = [
 //       clientID: "2a75d4fa6028b27e5790",
 //       clientSecret: "3b934635a6844571db8166bfed046eae98461f90",
 //       repo: "blog-comment", // GitHub 仓库
-//       owner: "itzhangbao", // GitHub仓库所有者
-//       admin: ["itzhangbao"], // 对仓库有写权限的人
+//       owner: "zhmbo", // GitHub仓库所有者
+//       admin: ["zhmbo"], // 对仓库有写权限的人
 //       // distractionFreeMode: true,
 //       pagerDirection: "last", // 'first'正序 | 'last'倒序
 //       id:

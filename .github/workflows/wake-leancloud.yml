@@ -24,4 +24,4 @@ jobs:
     runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
     steps:
       - name: 'GET请求LeanCloud'
-        run: curl lc-blog.itzhangbao.com
+        run: curl lc-blog.zhmbo.cn
