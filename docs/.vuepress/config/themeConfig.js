@@ -4,7 +4,7 @@ const nav = require("./nav.js");
 module.exports = {
     nav, // 导航
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    // navTitle: 'Jumbo',
+    // navTitle: 'zhmbo',
     logo: "https://cdn.jsdelivr.net/gh/zhmbo/static@master/img/20201011161451.png", // 导航栏logo
     // repo: "zhmbo", // 导航栏右侧生成Github链接
     serach: true,
@@ -56,7 +56,7 @@ module.exports = {
 
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     author: {
-      name: "Jumbo", // 必需
+      name: "zhmbo", // 必需
       link: "https://github.com/zhmbo", // 可选的
     },
 
@@ -93,7 +93,7 @@ module.exports = {
     // 页脚信息
     footer: {
       createYear: 2019, // 博客创建年份
-    //   copyrightInfo: 'Jumbo | <a href="https://github.com/zhmbo/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
-      copyrightInfo: 'Jumbo', // 博客版权信息，支持a标签
+    //   copyrightInfo: 'zhmbo | <a href="https://github.com/zhmbo/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      copyrightInfo: 'zhmbo', // 博客版权信息，支持a标签
     },
 }

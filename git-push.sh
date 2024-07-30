@@ -3,6 +3,6 @@ set -e
 
 git add .
 
-git commit -m'jumbo`blog update 🚀'
+git commit -m'zhmbo`blog update 🚀'
 
 git push
