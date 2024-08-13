@@ -24,6 +24,7 @@
         title="本站主题"
         >Vdoing theme</a
       > for Vuepress ·
+      <a href='https://beian.miit.gov.cn/' target="_blank">粤ICP备2024292992号-1</a>
       <i class="iconfont jumbo-eye"></i>
       <AccessNumber idVal="/blog/" flagTitle="首页"/>
       <Comments :isShowComments="false"/>
